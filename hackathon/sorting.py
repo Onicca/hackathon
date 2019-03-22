@@ -26,7 +26,7 @@ def merge_sort(items):
 
         if len(A) == 0:
             new_list = new_list + B
-        if len(B) == 0:
+        elif len(B) == 0:
             new_list = new_list + A
 
         return new_list
