@@ -8,7 +8,7 @@ def sum_array(array):
 
 def fibonacci(n):
 
-     """
+    """
     Calculate nth term in fibonacci sequence
 
     Args:
@@ -18,10 +18,8 @@ def fibonacci(n):
         int: nth term of fibonacci sequence,
              equal to sum of previous two terms
     """
-    if n==0:
-        return 0
-    elif n == 1:
-        return 1
+    if n <= 1:
+        return n
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
